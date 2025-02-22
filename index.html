@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="shortcut icon" href="img/airplane-7429725_641.jpg" type="image/x-icon">
+  <title>Prudy Tours - Travel With Us</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">PrudyTours</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#packages">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+
+      <main>
+        <section class="modal fade" tabindex="-1" id="booking-modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Book a tour</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form action="#">
+                  <div class="row g-2">
+                    <div class="col-sm-6">
+                      <div class="form-floating">
+                        <input id="email1" type="email" class="form-control" placeholder="Email Address">
+                        <label for="#email1">Email Address</label>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="form-floating">
+                        <select name="" id="select1" class="form-select">
+                          <option>Tromso, Norway - $499</option>
+                          <option>Paris, France - $799</option>
+                          <option>Los Angeles, USA - $849</option>
+                        </select>
+                        <label for="#select1">Pick a tour</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Checkout</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="herocarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#herocarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#herocarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#herocarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+              <img src="img/mountain-8346389_1280.jpg" class="d-block w-100 c-img" alt="...">
+              <div class="carousel-caption d-block c-caption">
+                <h5 class="fs-3 mt-5 text-uppercase">Discover the Hidden World</h5>
+                <h1 class="display-1 fw-bolder">The Prudy Tours</h1>
+                <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a tour</button>
+              </div>
+            </div>
+
+            <div class="carousel-item c-item">
+              <img src="img/ocean-7890172_1280.jpg" class="d-block w-100 c-img" alt="...">
+              <div class="carousel-caption d-block c-caption">
+                <h5 class="fs-3 mt-5 text-uppercase">The season has arrived</h5>
+                <h1 class="display-1 fw-bolder">3 Available Tours</h1>
+                <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a tour</button>
+              </div>
+            </div>
+
+            <div class="carousel-item c-item">
+              <img src="img/town-6843799_1280.jpg" class="d-block w-100 c-img" alt="...">
+              <div class="carousel-caption d-block c-caption">
+                <h5 class="fs-3 mt-5 text-uppercase">Destination activities</h5>
+                <h1 class="display-1 fw-bolder">Go Sight Seeing</h1>
+                <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a tour</button>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#herocarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#herocarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </section>
+
+        <section class="overview">
+          <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100 text-center fs-5">
+              <div class="col-lg-4">
+                <i class="bi bi-airplane-fill me-2"></i>
+                3 Amazing Destinations
+              </div>
+    
+              <div class="col-lg-4">
+                <i class="bi bi-wallet-fill me-2"></i>
+                Only pay 70% upfront
+              </div>
+    
+              <div class="col-lg-4">
+                <i class="bi bi-patch-check-fill me-2"></i>
+                1000's of customers
+              </div>
+            </div>
+           
+          </div>
+          
+        </section>
+
+        <section id="packages" class="pt-5">
+          <h2 class="text-center my-5">Packages</h2>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg mb-4">
+                <div class="card">
+                  <img src="img/hiking-7712678_1280.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Snow Hiking in Norway</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quos possimus tempore aut minima sunt deleniti laudantium incidunt sint accusamus.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a Tour</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg mb-4">
+                <div class="card">
+                  <img src="img/girl-1561989_1280.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Kayaking in France</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quos possimus tempore aut minima sunt deleniti laudantium incidunt sint accusamus.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a Tour</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg mb-4">
+                <div class="card">
+                  <img src="img/mountains-6060586_1280.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Snowy Peaks in LA</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quos possimus tempore aut minima sunt deleniti laudantium incidunt sint accusamus.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a Tour</a>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+
+          
+        </section>
+
+        <section id="faq py-5">
+          <h2 class="my-5 text-center">FAQ</h2>
+          <div class="container">
+            <div class="accordion mx-auto w-75" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    How long are the trips?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure nesciunt optio repellat nisi, dicta inventore cumque modi dignissimos quae quaerat aut mollitia! Repudiandae at blanditiis eligendi harum voluptate saepe in distinctio dolores perspiciatis! Tempore iste voluptatem autem accusantium, quae ipsa.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Is the flight ticket included?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, possimus itaque tenetur ut laborum quas ad, ipsum beatae mollitia amet quaerat hic rem ipsa consequatur consectetur dolores suscipit voluptatibus! Laboriosam.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Can I cancel after booking?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet, alias vel hic mollitia ut?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class=" d">
+          <h1>PrudyTours</h1>
+          <p><i class="bi bi-c-circle"></i>Copyright by Danicodes 2025. All rights reserved.</p>
+        </footer>
+      </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
