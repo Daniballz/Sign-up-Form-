@@ -1,6 +1,7 @@
 const signupForm = document.getElementById('signupForm');
 //error elements
-const usernameError = document.getElementById('usernameError');
+const firstnameError = document.getElementById('firstnameError');
+const lastnameError = document.getElementById('lastnameError');
 const emailError = document.getElementById('emailError');
 const passwordError = document.getElementById('passwordError');
 
@@ -10,23 +11,30 @@ signupForm.addEventListener('submit', function (event) {
     event.preventDefault();
 
     //getting form field values
-    const username = document.getElementById('username').value;
+    const firstname = document.getElementById('firstname').value;
+    const lastname = document.getElementById('lastname').value;
     const email = document.getElementById('emailAddress').value;
     const password = document.getElementById('password').value;
 
     let valid = true;
 
     //clear error messages
-    [usernameError, emailError, passwordError].forEach(item=>{
+    [firstnameError, emailError, passwordError].forEach(item=>{
         item.textContent = '';
     })
 
     //Validating form fields
-    //username validation
-    if (username.length < 3) {
+    //firstname validation
+    if (firstname == "") {
         valid = false;
-        usernameError.textContent = 'Your username must have at least 3 characters';
-        usernameError.style.display = 'block';
+        firstnameError.textContent = 'First Name cannot be empty';
+        firstnameError.style.display = 'block';
+    }
+
+    if (lastname == "") {
+        valid = false;
+        lastnameError.textContent = 'Last Name cannot be empty';
+        lastnameError.style.display = 'block';
     }
 
     //email validation

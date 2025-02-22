@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    margin-top: 120px;
+    margin-top: 90px;
 }
 
 .main .left{
@@ -41,9 +41,9 @@
     width: 100%;
     background: none;
     background-color: white;
-    padding: 15px 10px;
-    border-radius: 10px;
-    margin: 15px 0;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 15px 0 0;
     border-width: 1px;
 }
 
@@ -52,6 +52,7 @@
     background-color: rgb(61, 177, 61);
     border-radius: 5px;
     padding: 10px 0;
+    margin-top: 15px;
     text-decoration: none;
     color: white;
     text-align: center;    
